@@ -4,14 +4,14 @@
 
 In this project, I used a real-world dataset of confirmed exoplanets to build a classification model that predicts the **type of exoplanet** based on planetary and stellar attributes such as mass, radius, orbital characteristics, and distance from Earth. 
 
-After performing data cleaning and exploratory data analysis (EDA), I began preparing the data for building classification models. The goal of this project is to identify which physical features are most influential in the classification task, offering insights into the diversity of planets beyond our solar system.
+After performing data cleaning and exploratory data analysis (EDA), I completed feature engineering to prepare the data for building classification models. The goal of this project is to identify which physical features are most influential in the classification task, offering insights into the diversity of planets beyond our solar system.
 
 ## Objective
 To build and evaluate a machine learning model using real-world data.
 
 ## Project Steps
 - [x] Data exploration and cleaning
-- [ ] Feature selection/engineering
+- [x] Feature selection/engineering
 - [ ] Model selection and training
 - [ ] Model evaluation
 - [ ] Results and conclusion
@@ -44,18 +44,21 @@ The dataset comes from a publicly available exoplanet catalog and contains physi
 
 ## 🧼 Data Cleaning
 - Dropped constant columns: mass_wrt, radius_wrt
-- Handled missing values using median imputation for numerical columns
 - Removed duplicate records
-- Encoded categorical variables (planet_type, detection_method) using one-hot encoding
 
 ## 📈 Exploratory Data Analysis (EDA)
-- Analyzed class distribution of planet types
 - Visualized feature distributions
 - Generated correlation heatmaps
 - Explored relationships between mass, radius, orbital features, and planet type
 
+## 🔧 Feature Engineering
+- Performed train/test split using stratified sampling based on `planet_type`
+- Label encoded the target variable `planet_type`
+- One-hot encoded the `detection_method` feature
+- Imputed missing values in numerical columns using median strategy
+- Ensured train/test feature alignment and consistent preprocessing
+
 ## 🔜 Next Steps
-- Perform feature selection and engineering
 - Train and evaluate classification models
 - Summarize key findings, insights, and feature importances
 - Update this README with final conclusions and model performance once the project is complete
