@@ -14,7 +14,7 @@ To build and evaluate machine learning models that classify exoplanets using ast
 - [x] Feature selection and engineering
 - [x] Model selection and training
 - [x] Model evaluation and tuning
-- [x] fnal results and conclusion
+- [x] final results and conclusion
 
 ## 🧰 Tools & Libraries
 - Python
